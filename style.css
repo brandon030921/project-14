@@ -1,0 +1,268 @@
+*{
+    font-family: "Merriweather", serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #F5F2F0;
+    width: 100vw;
+}
+
+.header-section{
+    height: 20%;
+}
+
+.logo{
+    margin: 30px 50px;
+    z-index: 1;
+    height: 50px;
+}
+
+nav{
+    float: right;
+}
+
+.nav-lists{
+    margin: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.nav-lists li{
+    list-style: none;
+    margin-right: 50px;
+    color: #606467;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-lists li:hover{
+    color: black;
+}
+
+.nav-lists #line:before{
+    width: 27%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    top: 53px;
+    background-color: black;
+    right: 35%;
+}
+
+.hero-image{
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    z-index: -1;
+    left: 0px;
+}
+
+.hero-section{
+    left: 40%;
+    position: relative;
+}
+
+.container{
+    font-size: 75px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    line-height: 110px;
+    color: #454746;
+    position: relative;
+    margin-left: 120px;
+}
+
+.container span{
+    position: absolute;
+    color: #000;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke-width:1px;
+    left: -150px;
+}
+
+.container h1:after{
+    position: absolute;
+    content: "is our ";
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: grey;
+    top: 115px;
+    left: 380px;
+}
+
+.container h1:before{
+    position: absolute;
+    content: "ingredient.";
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: grey;
+    bottom: -35px;
+    left: 380px;
+}
+
+.hero-section button{
+    padding: 10px 40px;
+    background-color: #454746;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 140%;
+    margin-top: 30px;
+    margin-left: 35%;
+}
+
+.bottom{
+    margin-top: 30px;
+    display: flex;
+    width: 60vw;
+}
+
+.left-column{
+    flex-basis: 30%;
+    position: relative
+}
+
+.right-column{
+    flex-basis: 70%;
+}
+
+.left-column ul li{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    font-size: 120%;
+    color: #606467;
+    list-style: none;
+}
+
+.photography{
+    color: #454746;
+}
+
+.photography:before{
+    height: 15px;
+    width: 15px;
+    content: "";
+    border-radius: 50%;
+    background-color: #454746;
+    position: absolute;
+    top: 8px;
+    left: -27px;
+}
+
+.videography:before{
+    height: 12px;
+    width: 12px;
+    content: "";
+    border-radius: 50%;
+    background-color: #454746;
+    position: absolute;
+    top: 55px;
+    left: -27px;
+}
+
+.graphic:before{
+    height: 12px;
+    width: 12px;
+    content: "";
+    border-radius: 50%;
+    background-color: #454746;
+    position: absolute;
+    top: 110px;
+    left: -27px;
+
+}
+
+.illustration:before{
+    height: 12px;
+    width: 12px;
+    content: "";
+    border-radius: 50%;
+    background-color: #454746;
+    position: absolute;
+    top: 165px;
+    left: -27px;
+
+}
+
+.animation:before{
+    height: 12px;
+    width: 12px;
+    content: "";
+    border-radius: 50%;
+    background-color: #454746;
+    position: absolute;
+    top: 225px;
+    left: -27px;
+
+}
+
+.vertical-line{
+    width: 1px;
+    height: 270px;
+    position: absolute;
+    background-color: #454746;
+    top: 9px;
+    left: -20px;
+}
+
+.quote{
+    height: 50px;
+}
+
+.dancer{
+    width: 80%;
+}
+
+.right-column p{
+    font-family: 'Poppins', sans-serif;
+    color: #454746;
+    margin: 15px 0px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:760px){
+    .hero-image{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .hero-section{
+        left: 60px;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container{
+        padding: 10px;
+    }
+
+    button{
+        margin: 0px;
+    }
+
+    .container h1:before{
+        display: none;
+    }
+
+    .container h1:after{
+        display: none;
+    }
+
+    .hero-section button{
+        margin: 0px;
+    }
+
+}
